@@ -1,0 +1,345 @@
+@font-face {
+  font-family: "YoungSerif-Regular";
+  src: url("../fonts/YoungSerif-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit-VariableFont_wght";
+  src: url("../fonts/Outfit-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  background-color: #f3e6d8ff;
+  margin: 0px;
+  padding: 0px;
+}
+
+.recipe-card {
+  background-color: #ffffff;
+  width: 800px;
+  height: 1925px;
+  margin: 100px auto;
+  padding: 50px;
+  border-radius: 25px;
+}
+.recipe-image {
+  background-color: #ffffff;
+  width: 800px;
+  height: 400px;
+  border-radius: 15px;
+  background-image: url("../images/image-omelette.jpeg");
+  background-size: 800px 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.recipe-content h1 {
+  font-family: "YoungSerif-Regular";
+  color: #302d2cff;
+  padding: 0px 0px 10px 0px;
+}
+
+.recipe-content p {
+  font-family: "Outfit-VariableFont_wght";
+  color: #5f574eff;
+  padding: 0px 0px 20px 0px;
+}
+
+.recipe-time h3 {
+  font-family: "Outfit-VariableFont_wght";
+  color: #7b284fff;
+  padding: 25px 0px 0px 20px;
+}
+
+.recipe-time p {
+  padding: 0px 0px 2.5px 25px;
+}
+
+.recipe-time {
+  background-color: #fff5faff;
+  width: 800px;
+  height: 200px;
+  border-radius: 15px;
+  ul li::marker {
+    color: #7b284fff;
+  }
+}
+
+.recipe-ingridients {
+  ul li::marker {
+    color: #854632ff;
+    content: "■";
+    font-size: 10px;
+  }
+}
+
+.recipe-ingridients ul {
+  padding-left: 12.5px;
+}
+
+.recipe-ingridients h2 {
+  font-family: "YoungSerif-Regular";
+  color: #854632ff;
+  padding: 30px 0px 10px 0px;
+  font-weight: normal;
+}
+
+.recipe-ingridients p {
+  font-family: "Outfit-VariableFont_wght";
+  color: #5f574eff;
+  padding-left: 22.5px;
+}
+
+.custom-line {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.recipe-instructions h2 {
+  font-family: "YoungSerif-Regular";
+  color: #854632ff;
+  font-weight: normal;
+}
+
+.recipe-instructions ul {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.recipe-instructions ul li::marker {
+  font-weight: bold;
+  color: #854632ff;
+}
+
+.recipe-instructions p {
+  padding-left: 17.5px;
+}
+
+.recipe-nutrition h2 {
+  font-weight: normal;
+}
+
+.recipe-nutrition p {
+  padding: 0px;
+}
+
+.nutrition-list li {
+  display: flex;
+  padding: 12px 40px;
+  border-bottom: 1px solid #e3e3e3;
+  margin-left: -32px;
+  margin-right: -32px;
+}
+
+.nutrition-list li span {
+  flex: 1;
+  padding-right: 0px;
+  color: #5f564d;
+  font-family: "Outfit-VariableFont_wght";
+}
+
+.nutrition-list li strong {
+  color: #854632;
+  padding-right: 375px;
+  font-weight: bold;
+  font-family: "Outfit-VariableFont_wght";
+}
+
+.nutrition-list li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .recipe-card {
+    width: 100%;
+    height: 4300px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px;
+  }
+  .recipe-image {
+    background-image: url("../images/image-omelette.jpeg");
+    background-size: 768px 400px;
+    width: 768px;
+    height: 400px;
+    border-radius: 0px;
+  }
+  .recipe-time {
+    width: 650px;
+    height: auto;
+    margin-left: 30px;
+    padding: 0px 0px 20px 0px;
+    margin: 60px 0px 0px 60px;
+  }
+
+  .recipe-time h3 {
+    font-size: 37.5px;
+    padding: 40px 0px 0px 40px;
+  }
+  .recipe-time ul li::marker {
+    font-size: 30px;
+  }
+  .recipe-time ul {
+    padding: 0px 0px 0px 70px;
+  }
+  .recipe-content h1 {
+    font-size: 70px;
+    padding: 15px 15px 0px 70px;
+    font-style: normal;
+  }
+  .recipe-content p {
+    padding: 0px 10px 0px 70px;
+    font-size: 37.5px;
+  }
+  .recipe-ingridients h2 {
+    font-size: 50px;
+    padding: 30px 0px 10px 70px;
+  }
+  .recipe-ingridients ul li::marker {
+    font-size: 20px;
+  }
+  .recipe-ingridients ul {
+    padding: 0px 0px 0px 90px;
+  }
+  .recipe-instructions h2 {
+    font-size: 50px;
+    padding: 30px 0px 10px 70px;
+  }
+  .recipe-instructions ul li::marker {
+    font-size: 30px;
+  }
+  .recipe-instructions ul {
+    padding: 0px 0px 0px 110px;
+  }
+  .recipe-instructions p {
+    padding: 0px 0px 0px 30px;
+  }
+  .recipe-nutrition h2 {
+    font-size: 50px;
+    padding: 30px 0px 10px 70px;
+  }
+  .recipe-nutrition p {
+    padding: 0px 0px 0px 70px;
+    font-size: 37.5px;
+  }
+  .nutrition-list li {
+    padding: 12px 20px;
+    margin: 0px;
+    border-bottom: 1px solid #e3e3e3;
+    margin-left: -40px;
+    margin-right: 40px;
+  }
+  .nutrition-list li span {
+    font-size: 37.5px;
+  }
+  .nutrition-list li strong {
+    padding-right: 100px;
+    font-size: 37.5px;
+  }
+
+  @media (max-width: 430px) {
+    .body {
+      background-color: #ffffff;
+      margin: 0px;
+      padding: 0px;
+    }
+    .recipe-image {
+      background-image: url("../images/image-omelette.jpeg");
+      background-size: 430px 430px;
+      background-size: cover;
+      width: 430px;
+      height: 200px;
+      border-radius: 0px;
+    }
+    .recipe-card {
+      width: 430px;
+      height: 2550px;
+      margin: 0px;
+      padding: 0px;
+      border-radius: 0px;
+    }
+
+    .recipe-content h1 {
+      font-size: 40px;
+      padding: 15px 15px 0px 40px;
+    }
+
+    .recipe-content p {
+      font-size: 20px;
+      padding: 0px 10px 0px 40px;
+    }
+
+    .recipe-time {
+      width: 350px;
+      height: auto;
+      margin-left: 25px;
+      padding: 0px 0px 20px 0px;
+      margin: 60px 0px 0px 25px;
+    }
+
+    .recipe-time h3 {
+      font-size: 30px;
+      padding: 40px 0px 0px 25px;
+    }
+
+    .recipe-time p {
+      font-size: 20px;
+      padding-right: 20px;
+    }
+
+    .recipe-ingridients h2 {
+      font-size: 30px;
+      padding: 30px 0px 10px 25px;
+    }
+
+    .recipe-ingridients ul li::marker {
+      font-size: 15px;
+    }
+
+    .recipe-ingridients ul {
+      padding: 0px 0px 0px 50px;
+    }
+
+    .recipe-instructions h2 {
+      font-size: 30px;
+      padding: 30px 0px 10px 25px;
+    }
+
+    .recipe-instructions ul li::marker {
+      font-size: 20px;
+    }
+
+    .recipe-instructions ul {
+      padding: 0px 0px 0px 50px;
+    }
+
+    .recipe-instructions p {
+      padding: 0px 0px 0px 25px;
+    }
+
+    .recipe-nutrition h2 {
+      font-size: 30px;
+      padding: 30px 0px 10px 25px;
+    }
+
+    .recipe-nutrition p {
+      font-size: 20px;
+      padding: 0px 0px 0px 25px;
+    }
+
+    .nutrition-list li span {
+      font-size: 20px;
+    }
+
+    .nutrition-list li strong {
+      font-size: 20px;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+}
